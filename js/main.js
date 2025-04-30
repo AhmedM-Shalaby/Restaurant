@@ -71,7 +71,7 @@ if (
 
 //**************************************** */
 function fetching() {
-  fetch(`./data/${langPage}Home.json`)
+  fetch(`https://ahmedm-shalaby.github.io/Restaurant/data/${langPage}Home.json`)
     .then((res) => res.json())
     .then((data) => {
       localStorage.setItem("data", JSON.stringify(data));
