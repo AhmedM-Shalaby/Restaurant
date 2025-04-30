@@ -46,7 +46,7 @@ function getMood() {
 }
 getMood();
 function fatchCheckout() {
-  fetch(`data/${langPage}Home.json`)
+  fetch(`./data/${langPage}Home.json`)
     .then((res) => res.json())
     .then((data) => {
       localStorage.setItem("data", JSON.stringify(data));
