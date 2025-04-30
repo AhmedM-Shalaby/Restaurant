@@ -44,7 +44,7 @@ function getMood() {
 getMood();
 
 function fatchCheckout() {
-  fetch(`../data/${langPage}Home.json`)
+  fetch(`data/${langPage}Home.json`)
     .then((res) => res.json())
     .then((data) => {
       localStorage.setItem("data", JSON.stringify(data));
@@ -134,7 +134,7 @@ function fatchCheckout() {
       </div>
     </nav>
   </div>
-</div> 
+</div>
 <div class="left_nav" id="left_nav">
   <div class="left_nav_Details">
     <div class="logo-2">
@@ -230,7 +230,7 @@ function fatchCheckout() {
       <div class="Search__input">
         <h3 class="titleSearch">${shopPage.CATEGORIES}</h3>
         <div class="categoie" id = "categoie">
-         
+
         </div>
       </div>
       <div class="Search__input">
@@ -572,7 +572,7 @@ function fatchCheckout() {
             </div>
           </div>
         </div>
-        
+
           `;
           } else {
             break;
@@ -646,8 +646,8 @@ function fatchCheckout() {
               <div class="foot__us">
                 <h5>${Footer.footContectUS}</h5>
                 <ul class="foot__contect__lists" id="foot__contect">
-                  
-                  
+
+
                 </ul>
               </div>
             </div>
@@ -656,7 +656,7 @@ function fatchCheckout() {
             <div class="foot__links">
               <h6>${Footer.HeadLinks}</h6>
               <ul class="links__foot" id="linksFoot">
-                
+
               </ul>
             </div>
           </div>

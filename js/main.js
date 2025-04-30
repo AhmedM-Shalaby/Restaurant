@@ -71,7 +71,7 @@ if (
 
 //**************************************** */
 function fetching() {
-  fetch(`../data/${langPage}Home.json`)
+  fetch(`data/${langPage}Home.json`)
     .then((res) => res.json())
     .then((data) => {
       localStorage.setItem("data", JSON.stringify(data));
@@ -193,7 +193,7 @@ function fetching() {
       </div>
     </nav>
   </div>
-</div> 
+</div>
 <div class="left_nav" id="left_nav">
   <div class="left_nav_Details">
     <div class="logo-2">
@@ -257,7 +257,7 @@ function fetching() {
       }
       headNavBar();
       function showDataPage() {
-        let box = ` 
+        let box = `
 <section class="home">
       <div class="container-fluid">
         <div class="slider" id = "sli"></div>
@@ -450,7 +450,7 @@ function fetching() {
         </div>
       </div>
       <button class="lo active" id="OutMail">LogOut</button>
-    </div> 
+    </div>
     `;
 
         let layerSlider = "";
@@ -560,8 +560,8 @@ function fetching() {
               <div class="foot__us">
                 <h5>${Footer.footContectUS}</h5>
                 <ul class="foot__contect__lists" id="foot__contect">
-                  
-                  
+
+
                 </ul>
               </div>
             </div>
@@ -570,7 +570,7 @@ function fetching() {
             <div class="foot__links">
               <h6>${Footer.HeadLinks}</h6>
               <ul class="links__foot" id="linksFoot">
-                
+
               </ul>
             </div>
           </div>
@@ -649,7 +649,7 @@ function fetching() {
             <li class="pop__icon active">
               <i class="fa-solid fa-star"></i>
             </li>
-            
+
           </ul>
         </div>
         <p class="pop__desc">${arr[i].pop__desc}</p>
@@ -659,7 +659,7 @@ function fetching() {
       </div>
     </div>
   </div>
-  
+
     `;
         }
         document.getElementById("popCard").innerHTML = popCardContent;

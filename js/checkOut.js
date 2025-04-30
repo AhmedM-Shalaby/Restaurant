@@ -55,7 +55,7 @@ function checkData() {
 checkData();
 
 function fetching() {
-  fetch(`../data/${langPage}Home.json`)
+  fetch(`data/${langPage}Home.json`)
     .then((res) => res.json())
     .then((data) => {
       localStorage.setItem("data", JSON.stringify(data));
@@ -148,7 +148,7 @@ function fetching() {
         </div>
       </nav>
     </div>
-  </div> 
+  </div>
   <div class="left_nav" id="left_nav">
     <div class="left_nav_Details">
       <div class="logo-2">
@@ -278,7 +278,7 @@ function fetching() {
         </div>
       </div>
       <button class="lo active" id="OutMail">LogOut</button>
-    </div> 
+    </div>
     <div class="second__home">
       <div class="container">
         <div class="declear__page">
@@ -287,7 +287,7 @@ function fetching() {
           <a href="ChekOut.html" class="link__page linkSp"> / ${navbar.another.shop.four}</a>
         </div>
       </div>
-    </div> 
+    </div>
     <div class="check__out">
       <div class="container">
         <div class="bigpayment">
@@ -341,7 +341,7 @@ function fetching() {
               ${ShopCart.totalVarieties}
               <span id="total__varieties" class="center">${totalvarieties}</span>
             </p>
-            <p class="total">${ShopCart.totalprodect} 
+            <p class="total">${ShopCart.totalprodect}
               <span id="total__information">${totalprodect}</span>
             </p>
             <p class="total">
@@ -352,7 +352,7 @@ function fetching() {
               ${ShopCart.CheckOut}
             </button>
             <button class="RemoveAll" id="clearCart">
-            ${ShopCart.ClearCart} 
+            ${ShopCart.ClearCart}
             </button>
           </div>
         </div>
@@ -451,8 +451,8 @@ function fetching() {
                 <div class="foot__us">
                   <h5>${Footer.footContectUS}</h5>
                   <ul class="foot__contect__lists" id="foot__contect">
-                    
-                    
+
+
                   </ul>
                 </div>
               </div>
@@ -461,7 +461,7 @@ function fetching() {
               <div class="foot__links">
                 <h6>${Footer.HeadLinks}</h6>
                 <ul class="links__foot" id="linksFoot">
-                  
+
                 </ul>
               </div>
             </div>
