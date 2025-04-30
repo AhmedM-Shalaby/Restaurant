@@ -46,7 +46,7 @@ function getMood() {
 }
 getMood();
 function fatchCheckout() {
-  fetch(`../data/${langPage}Home.json`)
+  fetch(`/data/${langPage}Home.json`)
     .then((res) => res.json())
     .then((data) => {
       localStorage.setItem("data", JSON.stringify(data));
@@ -142,7 +142,7 @@ function headNavBar() {
 </div>
 </nav>
 </div>
-</div> 
+</div>
 <div class="left_nav" id="left_nav">
 <div class="left_nav_Details">
 <div class="logo-2">
@@ -278,7 +278,7 @@ function headNavBar() {
   </div>
 </div>
 <button class="lo active" id="OutMail">LogOut</button>
-</div> 
+</div>
 <div class="second__home">
 <div class="container">
   <div class="declear__page">
@@ -371,17 +371,15 @@ function cart() {
           <td class="bodyTable">${myCart[i].nameFliter}</td>
           <td class="bodyTable">$ ${myCart[i].newPrice}</td>
           <td class="bodyTable">
-            <button class="qunt" onclick= "countDown(${
-              myCart[i].id
-            })">-</button>
+            <button class="qunt" onclick= "countDown(${myCart[i].id
+      })">-</button>
             <span>${myCart[i].QUANTITY}</span>
             <button class="qunt" onclick = "countUP(${myCart[i].id})">+</button>
           </td>
           <td class="bodyTable">${myCart[i].totalPrice} $</td>
-          <td class="bodyTable" > 
-          <i class="fa-solid fa-circle-xmark delete"onclick="DeletRow(${
-            myCart[i].id
-          })" ></i>
+          <td class="bodyTable" >
+          <i class="fa-solid fa-circle-xmark delete"onclick="DeletRow(${myCart[i].id
+      })" ></i>
               </td>
     </tr>`;
   }
@@ -476,8 +474,8 @@ function FootertData() {
         <div class="foot__us">
           <h5>${Footer.footContectUS}</h5>
           <ul class="foot__contect__lists" id="foot__contect">
-            
-            
+
+
           </ul>
         </div>
       </div>
@@ -486,7 +484,7 @@ function FootertData() {
       <div class="foot__links">
         <h6>${Footer.HeadLinks}</h6>
         <ul class="links__foot" id="linksFoot">
-          
+
         </ul>
       </div>
     </div>
